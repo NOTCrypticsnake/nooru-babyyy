@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Sorry, Noor</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #AAA9AD; /* Metallic lilac */
+            color: #333;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+        }
+        h1 {
+            color: #6a0dad; /* Darker shade for contrast */
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 20px;
+            margin: 20px 0;
+            line-height: 1.5;
+        }
+        .heart {
+            font-size: 60px;
+            color: #6a0dad; /* Darker shade for contrast */
+        }
+        #apology-container {
+            display: block; /* Always show the container */
+            margin-top: 20px;
+            font-size: 18px;
+            line-height: 1.5;
+            max-height: 300px; /* Limit height for scrolling */
+            overflow-y: auto; /* Allow scrolling */
+            background-color: rgba(255, 255, 255, 0.8); /* Light background for visibility */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 0 auto; /* Center the apology box */
+            width: 80%; /* Set a width for the apology box */
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>I'm Sorry, Noor</h1>
+    <p>It was never my intention to hurt you. I truly apologize for liking that video.</p>
+    <p>Your feelings matter to me, and I want to make things right.</p>
+    <div class="heart">❤️</div>
+    <p>Let's talk and work through this together.</p>
+
+    <div id="apology-container">
+        <script>
+            const totalApologies = 100; // Total number of apologies to show
+            const apologyText = "I'm really sorry for liking that video. ";
+            const container = document.getElementById('apology-container');
+
+            for (let i = 0; i < totalApologies; i++) {
+                container.innerHTML += apologyText + "<br>"; // Add a new apology
+            }
+        </script>
+    </div>
+
+    <div class="footer">
+        <p>With all my love,</p>
+        <p>Your Baby</p>
+    </div>
+
+</body>
+</html>
